@@ -1,0 +1,44 @@
+.aboutBackground {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.me {
+    height: 390px;
+    position: absolute;
+    z-index: 3;
+    margin-top: 480px;
+    margin-left: 170px;
+}
+
+.aboutTag img {
+    height: 166px;
+    padding-left: 100px;
+    margin-top: 100px;
+    z-index: 2;
+    position: absolute;
+}
+
+.aboutText {
+    z-index: 3;
+    color: var(--color-slate-green);
+    font-size: 18px;
+    font-family: 'FavoritRegular';
+    font-weight: 400px;
+    width: 590px;
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 700px;
+    background-color: var(--color-tan);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.aboutText span {
+    font-family: 'FavoritBlack';
+}

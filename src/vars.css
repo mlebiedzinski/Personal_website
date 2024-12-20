@@ -1,0 +1,42 @@
+@font-face {
+    font-family: FormulaCondensedBlack;
+    src:url(Fonts/FormulaCondensedBlack.otf);
+}
+@font-face {
+    font-family: FormulaCondensedLightItalic;
+    src:url(Fonts/FormulaCondensedLightItalic.otf);
+}
+@font-face {
+    font-family: HeldaneDisplayRegular;
+    src:url(Fonts/HeldaneDisplayRegular.otf);
+}
+@font-face {
+    font-family: FavoritRegular;
+    src:url(Fonts/FavoritRegular.otf);
+}
+@font-face {
+    font-family: FavoritBlack;
+    src:url(Fonts/FavoritBlack.otf);
+}
+@font-face {
+    font-family: FavoritMonoRegular;
+    src:url(Fonts/FavoritMonoRegular.otf);
+}
+
+:root {
+    /* Colors */
+    --color-slate-green: #4E2A1A;
+    --color-tan: #EEEDD5;
+    --color-pink: #F4C451;
+    --color-blue: #6EBBE5;
+    --color-red: #A32E29;
+    --color-yellow: #F4C451;
+    --color-green: #A0C560;
+
+    --font-formulaCondensedBlack: "FormulaCondensedBlack";
+    --font-formulaCondensedLightItalic: "FormulaCondensedLightItalic";
+    --font-heldaneDisplayRegular: "HeldaneDisplayRegular";
+    --font-favoritRegular: "FavoritRegular";
+    --font-favoritBlack: "FavoritBlack";
+    --font-favoritMonoRegular: "FavoritMonoRegular";
+}

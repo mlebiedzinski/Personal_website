@@ -1,0 +1,103 @@
+{
+    "largeProjects": [
+      {
+        "title": "ScreenDime",
+        "skills": "Mobile App Development - UX/UI Design - User Testing",
+        "software": ["Swift"],
+        "tagline": "Bet on your screen time!",
+        "description": "This app helps users reduce phone usage and combat loneliness by encouraging real-world connections. Through challenges and bets, users compete to achieve the lowest screen time over a set period, with leaderboards and group comparisons fostering friendly competition. The app promotes healthier digital habits and inspires users to spend more time engaging with their surroundings, reducing isolation and enhancing social interaction.",
+        "image": "../../../assets/projects/sdMockup.png",
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/nflott/ScreenDime.git"
+          },
+          {
+            "type": "page",
+            "url": "#"
+          }
+        ]
+      },
+      {
+        "title": "Sustainable Innovation Network",
+        "skills": "Website Development - UX/UI Design - Branding",
+        "software": ["Javascript", "CSS", "Figma"],
+        "tagline": "Empowering Impact through Innovation!",
+        "description": "Sustainable Innovation Network (SIN) is a student-led social entrepreneurship organization with a mission to bridge impact and business. This project involved designing and developing SIN's website!",
+        "image": "../../../assets/projects/sinMockup.png",
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/Scout-NU/sustainable-innovation-network"
+          },
+          {
+            "type": "page",
+            "url": "https://sin-neu.netlify.app/"
+          }
+        ]
+      },
+      {
+        "title": "Strava Train Together",
+        "skills": "Product Design - UX/UI Design - User Research",
+        "software": ["Figma"],
+        "tagline": "The journey matters as much as the finish line!",
+        "description": "This project proposes a new feature for Strava that enables users to plan, schedule, and track workouts together with friends and family. Focusing on collaboration rather than competition, the feature allows users to link workouts to their calendars, add photos, and track progress throughout their training cycles. By fostering a sense of community and accountability, this feature helps users stay motivated and achieve their fitness goals in a supportive, fun way.",
+        "image": "../../../assets/projects/sttMockup.png",
+        "links": [
+          {
+            "type": "page",
+            "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162"
+          }
+        ]
+      }
+    ],
+
+    
+    "smallProjects": [
+      {
+        "title": "Adopt All Animals",
+        "skills": "Database design - API Handling",
+        "software": ["SQL", "Python"],
+        "description": "A user-friendly animal database application meant to connect customers and suppliers in an all-in-one platform allowing users to browse, add, and modify various detailed animal profiles.",
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/mlebiedzinski/animals-backend"
+          },
+          {
+            "type": "demo",
+            "url": "https://www.youtube.com/watch?v=E_Fj9gtn1B0"
+          }
+        ]
+      },
+      {
+        "title": "Sydney Housing",
+        "skills": "Machine Learning - Front End Development - Data Manipulation",
+        "software": ["Python", "HTML", "CSS"],
+        "description": "A machine learning-powered tool that predicts housing prices helping Sydney renters find agents offering rental prices below or above the market average, using a datset of approximately 30,000 property records.",
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/CS4992-AI-ML/open-house"
+          }
+        ]
+      },
+      {
+        "title": "Spreadsheet Web App",
+        "skills": "Software Development - Full-Stack - Testing",
+        "software": ["Typescript", "CSS"],
+        "description": "An application that mimics the look and functionality of spreadsheet apps like Google Sheets or Microsoft Excel.",
+        "links": [
+          {
+            "type": "github",
+            "url": "https://github.com/mlebiedzinski/Spreadsheet-app"
+          },
+          {
+            "type": "demo",
+            "url": "https://youtu.be/q6HDJp2ZptM"
+          }
+        ]
+      }
+    ]
+  }
+  

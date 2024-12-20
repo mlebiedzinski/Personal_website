@@ -1,0 +1,114 @@
+.contactBox {
+    background-color: var(--color-slate-green);
+    margin: 50px;
+    border-radius: 10px;
+    height: 520px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .contactTag img {
+    height: 166px;
+    padding-left: 100px;
+  }
+  
+  .circleLinkedin,
+  .circleEmail,
+  .circleGithub,
+  .circleResume,
+  .circleNothing {
+    position: relative;
+    height: 220px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .circleLinkedin {
+    margin-bottom: 80px;
+    margin-left: 15px;
+    padding: 10px;
+    height: 100;
+}
+.circleEmail img, 
+.circleResume img, 
+.circleNothing img{
+    width: 240px
+}
+
+.circleEmail , 
+.circleResume {
+    margin-top: 80px;
+    padding: 10px;
+}
+.circleGithub,
+ .circleNothing {
+    margin-bottom: 80px;
+    padding: 10px;
+}
+
+.circleLinkedin span,
+  .circleEmail span,
+  .circleGithub span,
+  .circleResume span {
+    color: var(--color-yellow);
+    font-size: 18px;
+    font-family: 'FavoritMonoRegular';
+    font-weight: 400px;
+    align-self: center;
+}
+  
+  .sticker {
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    width: 210px; 
+    height: auto;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
+  }
+  
+  .circleLinkedin:hover .sticker,
+  .circleEmail:hover .sticker,
+  .circleGithub:hover .sticker,
+  .circleResume:hover .sticker,
+  .circleNothing .sticker {
+    opacity: 1;
+    animation: stampEffect 0.4s forwards ease-out;
+  }
+  
+  @keyframes stampEffect {
+    0% {
+      transform: translate(-50%, -50%) scale(0);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.2); /* Overshoots */
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1); /* Settles back to normal */
+    }
+  }
+
+  .thanksSection{
+    width: 100vw;
+    text-align: center;
+  }
+
+  .matchaImg {
+    width: 300px;
+  }
+
+  .thanksText {
+    font-family: "HeldaneDisplayRegular";
+    font-size: 36px;
+    color: var(--color-slate-green);
+    margin-top: -80px;
+    padding-bottom: 80px;
+  }
+  .thanksText span{
+    font-family: "HeldaneDisplayRegular";
+    font-size: 36px;
+    color: var(--color-green)
+  }
+  

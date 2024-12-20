@@ -1,0 +1,142 @@
+.projectsTag img {
+  height: 166px;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 100px;
+}
+
+.projectsContainerSmall {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 2rem;
+}
+
+.projectCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-slate-green);
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.smallProjectCard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--color-slate-green);
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  min-width: 60%;
+  max-width: 500px;
+  padding-right: 50px;
+}
+
+.projectTitle {
+  font-family: HeldaneDisplayRegular;
+  color: var(--color-tan);
+  font-size: 48px;
+}
+
+.projectTitleSmall {
+  font-family: HeldaneDisplayRegular;
+  color: var(--color-tan);
+  font-size: 32px;
+}
+
+.projectSkills {
+  color: var(--color-pink);
+  font-size: 12px;
+  font-family: FavoritMonoRegular;
+}
+
+.projectSoftwarePillContainer {
+  padding-top: 12px;
+}
+
+.projectSoftwarePill {
+  flex-shrink: 0;
+  border-radius: 10px;
+  /* border: 1px solid var(--color-tan); */
+  background: var(--color-tan);
+  vertical-align: middle;
+  float: left;
+  text-align: center;
+  padding: 4px 9px 4px 9px;
+  margin-right: 6px;
+}
+
+.projectSoftware {
+  color: var(--color-slate-green);
+  font-size: 12px;
+  font-family: FavoritMonoRegular;
+}
+
+.projectTagline {
+  padding-top:60px;
+  color: var(--color-tan);
+  font-size: 22px;
+  font-family: FavoritBlack;
+}
+
+.projectDescription {
+  padding-top: 0px;
+  color: var(--color-tan);
+  font-size: 20px;
+  font-family: FavoritRegular;
+}
+
+.projectDescriptionSmall {
+  padding-top: 30px;
+  color: var(--color-tan);
+  font-size: 18px;
+  font-family: FavoritRegular;
+}
+
+.projectLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 30px;
+}
+
+.projectLinksSmall {
+  display: flex;
+  flex-direction: row;
+  gap: 9px;
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.projectImgContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.projectImg {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.projectIcon {
+  height: 42px;
+}
