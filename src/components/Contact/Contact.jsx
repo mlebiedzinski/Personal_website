@@ -25,28 +25,28 @@ export const Contact = () => {
             <div className={styles.contactBox}>
                 <div className={styles.circleLinkedin}>
                     {circle}
-                    <span>Visit my LinkedIn</span>
+                    <span>LinkedIn</span>
                     <a href="https://www.linkedin.com/in/maddie-lebiedzinski-826436229/" target="_blank" rel="noopener noreferrer">
                         <img className={styles.sticker} src="../../../assets/contact/linkedinSticker.png" alt="LinkedIn" />
                     </a>
                 </div>
                 <div className={styles.circleEmail}>
                     {circle}
-                    <span>Email Me</span>
+                    <span>Email</span>
                     <a href={`mailto:madison.lebiedzinski@gmail.com`}>
                         <img className={styles.sticker} src="../../../assets/contact/emailSticker.png" alt="Email" />
                     </a>
                 </div>
                 <div className={styles.circleGithub}>
                     {circle}
-                    <span>Check out my Code</span>
+                    <span>Code</span>
                     <a href="https://github.com/mlebiedzinski" target="_blank" rel="noopener noreferrer">
                         <img className={styles.sticker} src="../../../assets/contact/githubSticker.png" alt="GitHub" />
                     </a>
                 </div>
                 <div className={styles.circleResume}>
                     {circle}
-                    <span>View my Resume</span>
+                    <span>Resume</span>
                     <a href="https://drive.google.com/drive/folders/1ONzW-XY7uPfLSPmy3_p2Wv79dhFJjoBZ?usp=sharing" target="_blank" rel="noopener noreferrer">
                         <img className={styles.sticker} src="../../../assets/contact/resumeSticker.png" alt="Resume" />
                     </a>
