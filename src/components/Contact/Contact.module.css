@@ -50,7 +50,7 @@
     font-size: clamp(14px, 2vw, 18px);
     font-family: 'FavoritMonoRegular';
     font-weight: 400;
-    margin-top: 10px; /* Add space below the sticker */
+    margin-top: 0px; /* Add space below the sticker */
     z-index: 2; /* Ensure text appears above stickers */
 }
 
