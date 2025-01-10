@@ -132,12 +132,43 @@
    
 }
 
-@media screen and (min-width: 2000px) {
+@media screen and (min-width: 1800px) {
+    .heroCard1 {
+        margin-top: 100px;
+        height: 700px;
+        position: absolute;
+        z-index: 3;
+        left: 10%
+    }
+    
+    .heroCard2 {
+        padding-left: 10px;
+        height: 700px;
+        position: absolute;
+        z-index: 1;
+    }
+    .index {
+        transform: rotate(-8.83deg);
+        z-index: 6;  
+        position: absolute;
+        padding-top: 270px;
+        left: 10%
+
+    }
+    .indexLinks {
+        font-size: 30px;
+        font-family: 'FavoritMonoRegular';
+        font-weight: 400px;
+        text-decoration: none;
+        color: var(--color-slate-green); 
+    }
+
     .heroSticker {
-        height: 300px;
+        height: 200px;
         position: absolute;
         z-index: 2;
         margin-left: 0%;
         margin-top: 10px;
+    
     }
 }
