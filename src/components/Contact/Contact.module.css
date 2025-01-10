@@ -1,114 +1,141 @@
 .contactBox {
-    background-color: var(--color-slate-green);
-    margin: 50px;
-    border-radius: 10px;
-    height: 520px;
+  background-color: var(--color-slate-green);
+  margin: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  height: auto; /* Allow height to adapt */
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center; /* Center items */
+  align-items: center;
+  gap: 20px; /* Add space between circles */
+}
+
+.contactTag img {
+  height: 166px;
+  padding-left: 100px;
+}
+
+.circleNothing .sticker {
+  opacity: 1; /* Always visible */
+  transform: translate(-50%, -50%) scale(1); /* Default scale */
+  transition: none; /* Remove hover transition */
+}
+.circleNothing svg {
+  display: none; /* Hides the circle SVG for circleNothing */
+}
+
+.circleLinkedin,
+.circleEmail,
+.circleGithub,
+.circleResume,
+.circleNothing {
     position: relative;
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center; /* Center text and stickers */
+    align-items: center; 
+}
+
+.circleLinkedin span,
+.circleEmail span,
+.circleGithub span,
+.circleResume span {
+    color: var(--color-yellow);
+    font-size: clamp(14px, 2vw, 18px);
+    font-family: 'FavoritMonoRegular';
+    font-weight: 400;
+    margin-top: 10px; /* Add space below the sticker */
+    z-index: 2; /* Ensure text appears above stickers */
+}
+
+.sticker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%; /* Scale relative to the circle */
+    max-width: 150px;
+    height: auto;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
+    z-index: 1; /* Ensure stickers are below clickable areas */
+}
+
+.circleLinkedin:hover .sticker,
+.circleEmail:hover .sticker,
+.circleGithub:hover .sticker,
+.circleResume:hover .sticker {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.circleLinkedin a,
+.circleEmail a,
+.circleGithub a,
+.circleResume a,
+.circleNothing a {
+    position: absolute;
+    width: 100%; /* Ensure link spans the entire circle */
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Keep the link above everything */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer;
+}
+
+
+.thanksSection {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.matchaImg {
+  width: clamp(200px, 20vw, 300px);
+  height: auto;
+}
+
+.thanksText {
+  font-family: "HeldaneDisplayRegular";
+  font-size: clamp(24px, 3vw, 36px); 
+  color: var(--color-slate-green);
+}
+
+.thanksText span {
+  font-family: "HeldaneDisplayRegular";
+  font-size: clamp(24px, 3vw, 36px);
+  color: var(--color-green);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .contactBox {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .contactTag img {
-    height: 166px;
-    padding-left: 100px;
-  }
-  
+
   .circleLinkedin,
   .circleEmail,
   .circleGithub,
   .circleResume,
   .circleNothing {
-    position: relative;
-    height: 220px;
-    cursor: pointer;
-    text-align: center;
+      width: 140px; 
+      height: 140px;
   }
-  .circleLinkedin {
-    margin-bottom: 80px;
-    margin-left: 15px;
-    padding: 10px;
-    height: 100;
-}
-.circleEmail img, 
-.circleResume img, 
-.circleNothing img{
-    width: 240px
-}
 
-.circleEmail , 
-.circleResume {
-    margin-top: 80px;
-    padding: 10px;
-}
-.circleGithub,
- .circleNothing {
-    margin-bottom: 80px;
-    padding: 10px;
-}
-
-.circleLinkedin span,
-  .circleEmail span,
-  .circleGithub span,
-  .circleResume span {
-    color: var(--color-yellow);
-    font-size: 18px;
-    font-family: 'FavoritMonoRegular';
-    font-weight: 400px;
-    align-self: center;
-}
-  
   .sticker {
-    position: absolute;
-    top: 60%;
-    left: 53%;
-    width: 210px; 
-    height: auto;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
-  }
-  
-  .circleLinkedin:hover .sticker,
-  .circleEmail:hover .sticker,
-  .circleGithub:hover .sticker,
-  .circleResume:hover .sticker,
-  .circleNothing .sticker {
-    opacity: 1;
-    animation: stampEffect 0.4s forwards ease-out;
-  }
-  
-  @keyframes stampEffect {
-    0% {
-      transform: translate(-50%, -50%) scale(0);
-    }
-    50% {
-      transform: translate(-50%, -50%) scale(1.2); /* Overshoots */
-    }
-    100% {
-      transform: translate(-50%, -50%) scale(1); /* Settles back to normal */
-    }
+      max-width: 120px; 
   }
 
-  .thanksSection{
-    width: 100vw;
-    text-align: center;
-  }
-
-  .matchaImg {
-    width: 300px;
-  }
-
-  .thanksText {
-    font-family: "HeldaneDisplayRegular";
-    font-size: 36px;
-    color: var(--color-slate-green);
-    margin-top: -80px;
-    padding-bottom: 80px;
-  }
-  .thanksText span{
-    font-family: "HeldaneDisplayRegular";
-    font-size: 36px;
-    color: var(--color-green)
-  }
-  
+  .contactTag img {
+      height: 100px;
+    }
+}

@@ -1,44 +1,97 @@
-.aboutBackground {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
+.aboutContainer {
+    padding: 100px;
+    width: 100%;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+.aboutContent {
+    position: relative; 
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
 }
 
 .me {
-    height: 390px;
-    position: absolute;
-    z-index: 3;
-    margin-top: 480px;
-    margin-left: 170px;
-}
-
-.aboutTag img {
-    height: 166px;
-    padding-left: 100px;
-    margin-top: 100px;
-    z-index: 2;
-    position: absolute;
+    flex: 1 1 300px; /* Allow the image to grow/shrink with a minimum width */
+    max-width: 400px; /* Limit the image size */
+    height: auto;
+    object-fit: contain;
 }
 
 .aboutText {
-    z-index: 3;
-    color: var(--color-slate-green);
-    font-size: 18px;
+    flex: 1 1 300px; /* Allow the text to grow/shrink with a minimum width */
+    font-size: clamp(1rem, 2vw, 1.5rem); /* Dynamically scale font size */
     font-family: 'FavoritRegular';
-    font-weight: 400px;
-    width: 590px;
-    position: absolute;
-    margin-top: 380px;
-    margin-left: 700px;
+    color: var(--color-slate-green);
     background-color: var(--color-tan);
     padding: 15px;
     border-radius: 10px;
+    line-height: 1.5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .aboutText span {
     font-family: 'FavoritBlack';
+}
+
+.aboutTag img {
+    z-index: 3; 
+    height: 166px;
+}
+
+
+.aboutBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; Match the height of the parent */
+    background-image: url('../../../../assets/about/aboutBackground.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .aboutContent {
+        flex-direction: column; /* Stack image and text vertically */
+    }
+    .aboutContainer {
+        margin-bottom: 50px;
+    }
+
+    .me {
+        max-width: 300px; /* Reduce image size */
+    }
+
+    .aboutText {
+        font-size: clamp(0.9rem, 4vw, 1.2rem); 
+        text-align: center;
+    }
+    .aboutBackground {
+        background-size: cover; 
+        height: 50vh; 
+    }
+    .aboutTag {
+        width: 100px; 
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .aboutText {
+        font-size: clamp(1.2rem, 1.5vw, 2rem); /* Larger font size on big screens */
+    }
+    .aboutBackground {
+        height: 100vw; /* For larger screens, ensure it scales proportionally */
+        background-size: cover; /* Make sure the image fits the full screen */
+    }
 }
