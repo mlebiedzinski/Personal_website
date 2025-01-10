@@ -151,12 +151,12 @@
         transform: rotate(-8.83deg);
         z-index: 6;  
         position: absolute;
-        padding-top: 270px;
+        padding-top: 400px;
         left: 10%
 
     }
     .indexLinks {
-        font-size: 30px;
+        font-size: 28px;
         font-family: 'FavoritMonoRegular';
         font-weight: 400px;
         text-decoration: none;
