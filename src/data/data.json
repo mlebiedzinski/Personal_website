@@ -49,6 +49,20 @@
             "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162"
           }
         ]
+      },
+      {
+        "title": "Paul's",
+        "skills": "Front-end Development - UX/UI Design - Branding",
+        "software": ["Javascript", "CSS", "Figma"],
+        "tagline": "*coming soon!*",
+        "description": "A fun and cozy cafe website. A personal project to try out some new web design trends.",
+        "image": "../../../assets/projects/pauls.png",
+        "links": [
+          {
+            "type": "page",
+            "url": "/pauls"
+          }
+        ]
       }
     ],
 
