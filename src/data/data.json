@@ -37,20 +37,6 @@
         ]
       },
       {
-        "title": "Strava Train Together",
-        "skills": "Product Design - UX/UI Design - User Research",
-        "software": ["Figma"],
-        "tagline": "The journey matters as much as the finish line!",
-        "description": "This project proposes a new feature for Strava that enables users to plan, schedule, and track workouts together with friends and family. Focusing on collaboration rather than competition, the feature allows users to link workouts to their calendars, add photos, and track progress throughout their training cycles. By fostering a sense of community and accountability, this feature helps users stay motivated and achieve their fitness goals in a supportive, fun way.",
-        "image": "../../../assets/projects/sttMockup.png",
-        "links": [
-          {
-            "type": "page",
-            "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162"
-          }
-        ]
-      },
-      {
         "title": "Paul's",
         "skills": "Front-end Development - UX/UI Design - Branding",
         "software": ["Javascript", "CSS", "Figma"],
@@ -63,7 +49,22 @@
             "url": "/pauls"
           }
         ]
+      },
+      {
+        "title": "Strava Train Together",
+        "skills": "Product Design - UX/UI Design - User Research",
+        "software": ["Figma"],
+        "tagline": "The journey matters as much as the finish line!",
+        "description": "This project proposes a new feature for Strava that enables users to plan, schedule, and track workouts together with friends and family. Focusing on collaboration rather than competition, the feature allows users to link workouts to their calendars, add photos, and track progress throughout their training cycles. By fostering a sense of community and accountability, this feature helps users stay motivated and achieve their fitness goals in a supportive, fun way.",
+        "image": "../../../assets/projects/sttMockup.png",
+        "links": [
+          {
+            "type": "page",
+            "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162"
+          }
+        ]
       }
+      
     ],
 
     
