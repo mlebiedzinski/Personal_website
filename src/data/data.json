@@ -54,13 +54,13 @@
         "title": "Paul's",
         "skills": "Front-end Development - UX/UI Design - Branding",
         "software": ["Javascript", "CSS", "Figma"],
-        "tagline": "*coming soon!*",
-        "description": "A fun and cozy cafe website. A personal project to try out some new web design trends.",
+        "tagline": "From Grandpa’s doodle to your morning brew – Paul’s Café.",
+        "description": "This website is a nostalgic digital experience inspired by Grandpa Paul’s daily visits to his local café. The site combines hand-drawn illustrations and simple design to capture the warmth and simplicity of morning rituals. It's a tribute to the little moments that make mornings special.",
         "image": "../../../assets/projects/pauls.png",
         "links": [
           {
             "type": "page",
-            "url": "https://www.figma.com/proto/15NR6BxSl0ovtcXYZJ41bb/Untitled?node-id=5-36&t=iyYISAjaPup50MlU-1"
+            "url": "/pauls"
           }
         ]
       }
