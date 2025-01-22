@@ -21,7 +21,7 @@ function App() {
           <Route path="/sincasestudy" element={<SINCaseStudy />} />
           <Route path="/stravacasestudy" element={<StravaCaseStudy />} />
           <Route path="/pauls" element={<PaulsSite />} />
-          
+
         </Routes>
       </div>
     </Router>
