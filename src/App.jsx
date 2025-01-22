@@ -7,7 +7,7 @@ import { Contact } from "./components/Contact/Contact";
 import { ScreenDimeCaseStudy } from "./components/Projects/CaseStudies/ScreenDime"; 
 import { SINCaseStudy } from "./components/Projects/CaseStudies/SIN"; 
 import { StravaCaseStudy } from "./components/Projects/CaseStudies/StravaTT"; 
-import { PaulsSite } from "./components/Projects/CaseStudies/pauls.jsx";
+import { PaulsSite } from "./components/Projects/CaseStudies/PaulsPage.jsx";
 
 function App() {
   return (
