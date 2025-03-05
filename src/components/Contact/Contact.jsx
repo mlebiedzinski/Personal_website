@@ -63,10 +63,10 @@ export const Contact = () => {
                 </div>
 
             </div>
-            <div className={styles.thanksSection}>
+            {/* <div className={styles.thanksSection}>
                 <img className={styles.matchaImg} src="../../../assets/contact/matchaMe.png" alt="" />
                 <div className={styles.thanksText}>Thanks so <span>MATCHA </span>for visiting!</div>
-            </div>
+            </div> */}
         </section>
     );
 };

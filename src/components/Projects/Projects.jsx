@@ -48,6 +48,9 @@ export const Projects = () => {
                                             </a>
                                         </div>
                                     ))}
+                                    <div>
+                                        {link.hover}
+                                    </div>
                                 </div>
 
                         </div>

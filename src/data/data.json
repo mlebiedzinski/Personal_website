@@ -10,11 +10,13 @@
         "links": [
           {
             "type": "github",
-            "url": "https://github.com/nflott/ScreenDime.git"
+            "url": "https://github.com/nflott/ScreenDime.git",
+            "hover": "Check out the Code!"
           },
           {
             "type": "page",
-            "url": "/screendimecasestudy"
+            "url": "/screendimecasestudy",
+            "hover": "Read the Case Study!"
           }
         ]
       },
@@ -28,11 +30,13 @@
         "links": [
           {
             "type": "github",
-            "url": "https://github.com/Scout-NU/sustainable-innovation-network"
+            "url": "https://github.com/Scout-NU/sustainable-innovation-network",
+            "hover": "Check out the Code!"
           },
           {
             "type": "page",
-            "url": "/sincasestudy"
+            "url": "/sincasestudy",
+            "hover": "Visit the Website!"
           }
         ]
       },
@@ -46,7 +50,8 @@
         "links": [
           {
             "type": "page",
-            "url": "/pauls"
+            "url": "/pauls",
+            "hover": "Visit the Website!"
           }
         ]
       },
@@ -60,7 +65,8 @@
         "links": [
           {
             "type": "page",
-            "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162"
+            "url": "https://www.figma.com/proto/enIIyXoRQeJ6jgGpazarqf/DDP-Project?page-id=0%3A1&node-id=400-162&node-type=canvas&viewport=-14328%2C-6112%2C0.29&t=FMNVxpOFIVWnuAZX-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=400%3A162",
+            "hover": "Read the Case Study!"
           }
         ]
       }
@@ -77,11 +83,13 @@
         "links": [
           {
             "type": "github",
-            "url": "https://github.com/mlebiedzinski/animals-backend"
+            "url": "https://github.com/mlebiedzinski/animals-backend",
+            "hover": "Code!"
           },
           {
             "type": "demo",
-            "url": "https://drive.google.com/file/d/1UdXiiqkSTWvF9bIdLADi3xUgAaP9flnR/view?usp=sharing"
+            "url": "https://drive.google.com/file/d/1UdXiiqkSTWvF9bIdLADi3xUgAaP9flnR/view?usp=sharing",
+            "hover": "Project Video!"
           }
         ]
       },
@@ -93,7 +101,8 @@
         "links": [
           {
             "type": "github",
-            "url": "https://github.com/CS4992-AI-ML/open-house"
+            "url": "https://github.com/CS4992-AI-ML/open-house",
+            "hover": "Code!"
           }
         ]
       },
@@ -105,11 +114,13 @@
         "links": [
           {
             "type": "github",
-            "url": "https://github.com/mlebiedzinski/Spreadsheet-app"
+            "url": "https://github.com/mlebiedzinski/Spreadsheet-app",
+            "hover": "Code!"
           },
           {
             "type": "demo",
-            "url": "https://youtu.be/q6HDJp2ZptM"
+            "url": "https://youtu.be/q6HDJp2ZptM",
+            "hover": "Project Video!"
           }
         ]
       }
