@@ -61,7 +61,7 @@ export const Contact = () => {
                         <img className={styles.sticker} src="../../../assets/contact/catSticker.png" alt="Cat" />
                     </a>
                 </div>
-
+ 
             </div>
             {/* <div className={styles.thanksSection}>
                 <img className={styles.matchaImg} src="../../../assets/contact/matchaMe.png" alt="" />

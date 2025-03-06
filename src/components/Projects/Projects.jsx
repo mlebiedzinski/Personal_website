@@ -15,7 +15,7 @@ export const Projects = () => {
             <img className={styles.projectIcon} src="../../../assets/projects/videoIcon.png"></img>
         )
     };
-    
+
 
     return (
         <section id="projects">
@@ -41,17 +41,17 @@ export const Projects = () => {
                             <div className={styles.projectTagline}>{project.tagline}</div>
                             <div className={styles.projectDescription}>{project.description}</div>
                             <div className={styles.projectLinks}>
-                                    {project.links.map((link, idx) => (
-                                        <div key={idx} className={styles.projectLinkButton}>
-                                            <a href={link.url} target="_blank" rel="noopener noreferrer">
-                                                {icons[link.type]}
-                                            </a>
-                                        </div>
-                                    ))}
-                                    <div>
-                                        {link.hover}
+                                {project.links.map((link, idx) => (
+                                    <div key={idx} className={styles.projectLinkButton}>
+                                        <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                            {icons[link.type]}
+                                        </a>
                                     </div>
-                                </div>
+                                ))}
+                                {/* <div>
+                                    {link.hover}
+                                </div> */}
+                            </div>
 
                         </div>
                         <div className={styles.projectImgContainer}>
