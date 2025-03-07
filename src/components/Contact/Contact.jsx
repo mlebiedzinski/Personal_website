@@ -12,61 +12,80 @@ const circle = (
         />
     </svg>
 );
+const arrow = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+        <path d="M1 16L14 8.5L1 0.999999" stroke="black" strokeWidth="1.5" />
+    </svg>
+)
 
 export const Contact = () => {
-    
+
     return (
         <section id="contact">
-            <div className={styles.contactTag}>
-                <img src="../../../assets/contact/contactTag.png" alt="contactTag" />
-            </div>
-            <div className={styles.contactBox}>
-                <div className={styles.circleLinkedin}>
-                    {circle}
-                    <span>LinkedIn</span>
+            <div className={styles.contactBackground}>
+                <div className={styles.contactContainer}>
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
                     <a href="https://www.linkedin.com/in/maddie-lebiedzinski-826436229/" target="_blank" rel="noopener noreferrer">
-                        <img className={styles.sticker} src="../../../assets/contact/linkedinSticker.png" alt="LinkedIn" />
+                        <div className={styles.contactLinks} >
+                            <div className={styles.contactText}> LinkedIn </div>
+                            <div className={styles.contactArrow}>{arrow}</div>
+                        </div>
                     </a>
-                </div>
-                <div className={styles.circleEmail}>
-                    {circle}
-                    <span>Email</span>
-                    <a href={`mailto:madison.lebiedzinski@gmail.com`}>
-                        <img className={styles.sticker} src="../../../assets/contact/emailSticker.png" alt="Email" />
-                    </a>
-                </div>
-                <div className={styles.circleGithub}>
-                    {circle}
-                    <span>Code</span>
+
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
+
                     <a href="https://github.com/mlebiedzinski" target="_blank" rel="noopener noreferrer">
-                        <img className={styles.sticker} src="../../../assets/contact/githubSticker.png" alt="GitHub" />
+                        <div className={styles.contactLinks}>
+                            <div className={styles.contactText}> Github </div>
+                            <div className={styles.contactArrow}>{arrow}</div>
+                        </div>
                     </a>
-                </div>
-                <div className={styles.circleResume}>
-                    {circle}
-                    <span>Resume</span>
+
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
+
+                    <a href={`mailto:madison.lebiedzinski@gmail.com`} target="_blank" rel="noopener noreferrer">
+                        <div className={styles.contactLinks}>
+                            <div className={styles.contactText}> Email </div>
+                            <div className={styles.contactArrow}>{arrow}</div>
+                        </div>
+                    </a>
+
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
+
                     <a href="https://drive.google.com/drive/folders/1ONzW-XY7uPfLSPmy3_p2Wv79dhFJjoBZ?usp=sharing" target="_blank" rel="noopener noreferrer">
-                        <img className={styles.sticker} src="../../../assets/contact/resumeSticker.png" alt="Resume" />
+                        <div className={styles.contactLinks}>
+                            <div className={styles.contactText}> Resume </div>
+                            <div className={styles.contactArrow}>{arrow}</div>
+                        </div>
                     </a>
+
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
+                    <div className={styles.contactThanks}> Thanks For Visiting ! </div>
+                    <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
+
+                    <div className={styles.boxContainer}>
+
+                        <div className={styles.box}>
+                            <div className={styles.boxText}>
+                                <span>I make pet portraits!</span>
+                            </div>
+                            <a href="#">
+                            <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
+                            </a>
+                        </div>
+
+                        <div className={styles.box}>
+                            <div className={styles.boxText}>
+                                <span>I’m running a marathon. <br />
+                                    Help me raise money for cancer.</span></div>
+                                    <a href="#">
+                            <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
+                        </a>
+                        </div>
+                    </div>
                 </div>
-                <div className={styles.circleNothing}>
-                    {circle}
-                    <a
-                        href="#"
-                        onClick={(e) => {
-                            e.preventDefault();
-                            window.scrollTo({ top: 0, behavior: "smooth" });
-                        }}
-                    >
-                        <img className={styles.sticker} src="../../../assets/contact/catSticker.png" alt="Cat" />
-                    </a>
-                </div>
- 
+
             </div>
-            {/* <div className={styles.thanksSection}>
-                <img className={styles.matchaImg} src="../../../assets/contact/matchaMe.png" alt="" />
-                <div className={styles.thanksText}>Thanks so <span>MATCHA </span>for visiting!</div>
-            </div> */}
         </section>
     );
 };

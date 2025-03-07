@@ -1,141 +1,82 @@
-.contactBox {
-  background-color: var(--color-slate-green);
-  margin: 50px;
-  border-radius: 10px;
-  padding: 20px;
-  height: auto; /* Allow height to adapt */
-  display: flex;
-  flex-wrap: wrap; /* Allow wrapping */
-  justify-content: center; /* Center items */
-  align-items: center;
-  gap: 20px; /* Add space between circles */
+.contactBackground {
+  width: 100vw;
+  min-height: 60vh;
+  background: var(--color-yellow);
+  padding-bottom: 50px;
 }
 
-.contactTag img {
-  height: 166px;
-  padding-left: 100px;
+.contactContainer {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%; 
 }
 
-.circleNothing .sticker {
-  opacity: 1; /* Always visible */
-  transform: translate(-50%, -50%) scale(1); /* Default scale */
-  transition: none; /* Remove hover transition */
-}
-.circleNothing svg {
-  display: none; /* Hides the circle SVG for circleNothing */
-}
-
-.circleLinkedin,
-.circleEmail,
-.circleGithub,
-.circleResume,
-.circleNothing {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    cursor: pointer;
-    text-align: center;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center text and stickers */
-    align-items: center; 
-}
-
-.circleLinkedin span,
-.circleEmail span,
-.circleGithub span,
-.circleResume span {
-    color: var(--color-yellow);
-    font-size: clamp(14px, 2vw, 18px);
-    font-family: 'FavoritMonoRegular';
-    font-weight: 400;
-    margin-top: 0px; /* Add space below the sticker */
-    z-index: 2; /* Ensure text appears above stickers */
-}
-
-.sticker {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 80%; /* Scale relative to the circle */
-    max-width: 150px;
-    height: auto;
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
-    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.4s ease;
-    z-index: 1; /* Ensure stickers are below clickable areas */
-}
-
-.circleLinkedin:hover .sticker,
-.circleEmail:hover .sticker,
-.circleGithub:hover .sticker,
-.circleResume:hover .sticker {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.circleLinkedin a,
-.circleEmail a,
-.circleGithub a,
-.circleResume a,
-.circleNothing a {
-    position: absolute;
-    width: 100%; /* Ensure link spans the entire circle */
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 3; /* Keep the link above everything */
-    text-decoration: none; /* Remove underline */
-    cursor: pointer;
-}
-
-
-.thanksSection {
+.contactLine {
   width: 100%;
+}
+
+.contactLinks {
+  padding-top: 8px;
+}
+
+.contactLinks:hover .contactArrow {
+  margin-right: 3%;
+}
+
+.contactText {
+  font-family: FavoritMonoRegular;
+  font-size: 15px;
+  display:inline-block;
+  margin-left: 20%;
+  padding: 0px;
+  color: black;
+}
+.contactThanks {
+  font-family: FavoritMonoRegular;
+  font-size: 15px;
   text-align: center;
-  margin-top: 20px;
-  padding: 20px;
+  padding: 0px;
+  padding-top: 8px;
 }
 
-.matchaImg {
-  width: clamp(200px, 20vw, 300px);
-  height: auto;
+.contactArrow {
+  display:inline-block;
+  float: inline-end;
+  margin-right: 20%;
 }
 
-.thanksText {
-  font-family: "HeldaneDisplayRegular";
-  font-size: clamp(24px, 3vw, 36px); 
-  color: var(--color-slate-green);
+.boxContainer {
+  padding-top: 3%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.thanksText span {
-  font-family: "HeldaneDisplayRegular";
-  font-size: clamp(24px, 3vw, 36px);
-  color: var(--color-green);
+.box {
+  min-width: 250px;
+  min-height: 130px;
+  padding: 13px;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  float: inline-start;
 }
 
-/* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-  .contactBox {
-      flex-direction: column;
-      align-items: center;
-  }
+.boxText {
+  display:block;
+  height: 60px;
+}
+.boxText span{
+  font-family: FavoritMonoRegular;
+  font-size: 15px;
+  color: white;
+}
 
-  .circleLinkedin,
-  .circleEmail,
-  .circleGithub,
-  .circleResume,
-  .circleNothing {
-      width: 140px; 
-      height: 140px;
-  }
-
-  .sticker {
-      max-width: 120px; 
-  }
-
-  .contactTag img {
-      height: 100px;
-    }
+.linkIcon {
+  width: 40px;
+  align-self: flex-end; /* pushes the icon to the right */
+  margin-top: auto; /* ensures it sits at the bottom */
 }
