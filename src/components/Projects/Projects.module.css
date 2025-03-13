@@ -1,17 +1,22 @@
-.projectsTag img {
-  height: 166px;
-}
-
 .projectsContainer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 100px;
+  padding: 2rem;
 }
 
+.projectsTitle {
+  text-align: center;
+}
+.projectsTitle p {
+  font-family: FavoritMonoRegular;
+}
+.dividerLine {
+  width: 100%;
+  padding: 2rem;
+}
 .projectsContainerSmall {
   display: flex;
-  /* flex-direction: column; */
   gap: 2rem;
 }
 
@@ -19,23 +24,31 @@
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: var(--color-slate-green);
-  color: #fff;
+  background-color: none ;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+}
+
+.projectCard:hover{
+  background-color: var(--color-yellow);
+}
+.smallProjectCard:hover{
+  background-color: var(--color-yellow);
 }
 
 .smallProjectCard {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: var(--color-slate-green);
+  background-color: none;
   color: #fff;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   width: 100%;
+  border: 1px solid #000;
 }
 
 .projectContent {
@@ -49,18 +62,18 @@
 
 .projectTitle {
   font-family: HeldaneDisplayRegular;
-  color: var(--color-tan);
+  color: black;
   font-size: 48px;
 }
 
 .projectTitleSmall {
   font-family: HeldaneDisplayRegular;
-  color: var(--color-tan);
+  color: black;
   font-size: 32px;
 }
 
 .projectSkills {
-  color: var(--color-pink);
+  color: var(--color-blue);
   font-size: 12px;
   font-family: FavoritMonoRegular;
 }
@@ -72,8 +85,7 @@
 .projectSoftwarePill {
   flex-shrink: 0;
   border-radius: 10px;
-  /* border: 1px solid var(--color-tan); */
-  background: var(--color-tan);
+  background: black;
   vertical-align: middle;
   float: left;
   text-align: center;
@@ -82,28 +94,28 @@
 }
 
 .projectSoftware {
-  color: var(--color-slate-green);
+  color: white;
   font-size: 12px;
   font-family: FavoritMonoRegular;
 }
 
 .projectTagline {
   padding-top:60px;
-  color: var(--color-tan);
+  color: black;
   font-size: 22px;
   font-family: FavoritBlack;
 }
 
 .projectDescription {
   padding-top: 0px;
-  color: var(--color-tan);
+  color: black;
   font-size: 20px;
   font-family: FavoritRegular;
 }
 
 .projectDescriptionSmall {
   padding-top: 30px;
-  color: var(--color-tan);
+  color: black;
   font-size: 18px;
   font-family: FavoritRegular;
 }

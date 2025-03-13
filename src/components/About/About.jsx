@@ -7,10 +7,12 @@ export const About = () => {
     return (
         <section id="about">
             <div className={styles.aboutContainer}>
-                {/* <div className={styles.aboutBackground}></div> */}
-                <div className={styles.aboutTag}>
-                    <img src="../../../../assets/about/aboutTag.png" alt="aboutTag" />
+        
+                <div className={styles.aboutTitle}>
+                    <p>About me !</p>
+                    <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
                 </div>
+
                 <div className={styles.aboutContent}>
                     <img className={styles.me} src="../../../../assets/about/me.png" alt="me" />
                     <div className={styles.aboutText}>

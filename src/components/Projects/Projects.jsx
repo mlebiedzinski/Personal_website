@@ -21,8 +21,9 @@ export const Projects = () => {
         <section id="projects">
 
             <div className={styles.projectsContainer}>
-                <div className={styles.projectsTag}>
-                    <img src="../../../assets/projects/projectsTag.png" alt="projectsTag" />
+                <div className={styles.projectsTitle}>
+                    <p>Check out my projects !</p>
+                    <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
                 </div>
                 {data.largeProjects.map((project, index) => (
                     <div key={index} className={styles.projectCard}>
