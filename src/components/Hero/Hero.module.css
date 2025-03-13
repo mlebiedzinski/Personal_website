@@ -1,174 +1,120 @@
-.heroBackground {
-    background-image: url("../../../../assets/hero/heroBackground.png");
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: center; 
-    height: 100vh;
-    width: 100vw; 
-    position: relative;
-    overflow: hidden; 
-  }
-
-.heroCardStack {
-    padding-top: 30px;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    padding-left: 300px;
-    position: relative;
+.bentoGrid {
+    padding: 2rem;
+    display: grid;
+    gap: .5rem;
+    grid-template-areas: 
+    'box1 box1 box1 box1 box2 box2 box2 box2'
+    'box1 box1 box1 box1 box2 box2 box2 box2'
+    'box3 box3 box4 box4 box2 box2 box2 box2'
+    'box3 box3 box4 box4 box2 box2 box2 box2'
+    'box5 box5 box4 box4 box2 box2 box2 box2';
+    
+    border-radius: .5rem;
 }
 
-.heroCard1 {
-    margin-top: 100px;
-    height: 600px;
-    position: absolute;
-    z-index: 3;
-}
-
-.heroCard2 {
-    left: 37%;
-    height: 600px;
-    position: absolute;
-    z-index: 1;
-}
-
-.heroSticker {
-    height: 140px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 320px;
-    margin-top: 10px;
+.bentoGrid .item {
+    background-color: var(--color-pink);
+    color: white;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    display: grid;
+    place-content: left;
 
 }
 
-.heroMaddieCircle {
-    height: 140px;
-    position: absolute;
-    z-index: 2;
-    margin-left: 650px;
-    margin-top: -20px;
-    animation: rotate 5s linear infinite;
+.bentoGrid .item p {
+    font-family: FavoritMonoRegular;
+    display: inline;
+    align-self: end; 
+    color: black;
+
+}
+.bentoGrid .item img {
+    display: inline;
+    width: 60%;
+    height: auto;
 }
 
-.index {
-    transform: rotate(-8.83deg);
-    z-index: 6;  
-    position: absolute;
-    padding-top: 300px;
-    padding-left: 56px;
+.bentoGrid .item .dot {
+    display: block;
+    margin-left: auto;
+    
+}
+.bentoGrid .item .dotContain {
+    text-align: right;
+    width: 100%;
 }
 
-.index li {
-    list-style-type: none;
+.bentoGrid .item:nth-child(1) { grid-area: box1; }
+.bentoGrid .item:nth-child(2) {
+     grid-area: box2;
+     display: flex;
+     justify-content: space-between; 
+    }
+.bentoGrid .item:nth-child(2) p {
+    max-width: 45%;
+}
+.bentoGrid .item:nth-child(2) img {
+    padding: 4rem 0rem 0rem 4rem;
+}
+.bentoGrid .item:nth-child(3) { grid-area: box3; }
+.bentoGrid .item:nth-child(4) { grid-area: box4; }
+.bentoGrid .item:nth-child(5) { 
+    grid-area: box5; 
+    border: 1px solid #000;
+    background-color: var(--color-gray);
 }
 
+.navButton {
+    border-radius: 25.5px;
+    border: 1px solid #000;
+    font-family: FavoritMonoRegular;
+    font-size: 15px;
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-right: 6px;
+    color: black;
+}
 
+.star {
+    margin-left: 1.5rem;
+    margin-right: 2rem;
+    transition: transform 0.5s ease-in-out;
+    display: inline-block; 
+}
+.star:hover {
+    transform: rotate(360deg);
+}
+.typing {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(9, end) forwards;
+    border-right: 2px solid transparent; 
+}
+
+.blink {
+    opacity: 0;
+    animation: blink-animation 1s steps(2, start) infinite;
+    animation-delay: 2s; 
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
 .indexLinks {
     font-size: 20px;
     font-family: 'FavoritMonoRegular';
     font-weight: 400px;
     text-decoration: none;
     color: var(--color-slate-green); 
-}
-
-@keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
-  /* Responsive Adjustments */
-@media screen and (max-width: 768px) {
-    .heroCardStack {
-        .heroCardStack {
-            padding-top: 30px;
-            padding-right: 30px;
-            margin-bottom: 40px;
-            position: relative;
-        }
-        
-        .heroCard1 {
-            margin-top: 100px;
-            height: 500px;
-            position: absolute;
-            z-index: 3;
-            left: 10%
-        }
-        
-        .heroCard2 {
-            padding-left: 10px;
-            height: 500px;
-            position: absolute;
-            z-index: 1;
-        }
-        .index {
-            transform: rotate(-8.83deg);
-            z-index: 6;  
-            position: absolute;
-            padding-top: 270px;
-            left: 10%
-
-        }
-
-        .indexLinks {
-            font-size: 15px;
-            font-family: 'FavoritMonoRegular';
-            font-weight: 400px;
-            text-decoration: none;
-            color: var(--color-slate-green); 
-        }
-        
-        .heroSticker {
-            height: 100px;
-            position: absolute;
-            z-index: 2;
-            margin-left: 0%;
-            margin-top: 10px;
-        
-        }
-    }
-   
-}
-
-@media screen and (min-width: 1800px) {
-    .heroCard1 {
-        margin-top: 100px;
-        height: 900px;
-        position: absolute;
-        z-index: 3;
-        left: 10%
-    }
-    
-    .heroCard2 {
-        padding-left: 10px;
-        height: 900px;
-        position: absolute;
-        z-index: 1;
-    }
-    .index {
-        transform: rotate(-8.83deg);
-        z-index: 6;  
-        position: absolute;
-        padding-top: 400px;
-        left: 12%
-
-    }
-    .indexLinks {
-        font-size: 28px;
-        font-family: 'FavoritMonoRegular';
-        font-weight: 400px;
-        text-decoration: none;
-        color: var(--color-slate-green); 
-    }
-
-    .heroSticker {
-        height: 200px;
-        position: absolute;
-        z-index: 2;
-        margin-left: 20%;
-        margin-top: 10px;
-    
-    }
 }
