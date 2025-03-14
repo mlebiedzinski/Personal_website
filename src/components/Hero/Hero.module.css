@@ -69,7 +69,7 @@
 .bentoGrid .item:nth-child(5) { 
     grid-area: box5; 
     border: 1px solid #000;
-    background-color: var(--color-gray);
+    background-color: var(--color-tan);
 }
 
 .navButton {
