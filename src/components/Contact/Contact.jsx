@@ -22,6 +22,10 @@ export const Contact = () => {
 
     return (
         <section id="contact">
+            <div className={styles.contactTitle}>
+                    <p>Contact Me !</p>
+                    <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
+                </div>
             <div className={styles.contactBackground}>
                 <div className={styles.contactContainer}>
                     <img className={styles.contactLine} src="../../../assets/contact/line.png" alt="line" />
@@ -70,7 +74,7 @@ export const Contact = () => {
                                 <span>I make pet portraits!</span>
                             </div>
                             <a href="#">
-                            <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
+                                <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
                             </a>
                         </div>
 
@@ -78,10 +82,25 @@ export const Contact = () => {
                             <div className={styles.boxText}>
                                 <span>I’m running a marathon. <br />
                                     Help me raise money for cancer.</span></div>
-                                    <a href="#">
-                            <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
-                        </a>
+                            <a href="#">
+                                <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
+                            </a>
                         </div>
+<div className={styles.arrowBox}>
+<a href="#home">
+                            <div className={styles.arrow}>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="52" viewBox="0 0 30 52" fill="none">
+                                    <path d="M16.4142 0.585785C15.6332 -0.195263 14.3668 -0.195263 13.5858 0.585785L0.857869 13.3137C0.0768206 14.0948 0.0768204 15.3611 0.857869 16.1421C1.63892 16.9232 2.90525 16.9232 3.6863 16.1421L15 4.82843L26.3137 16.1421C27.0948 16.9232 28.3611 16.9232 29.1421 16.1421C29.9232 15.3611 29.9232 14.0948 29.1421 13.3137L16.4142 0.585785ZM17 52L17 2L13 2L13 52L17 52Z" fill="black" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 69 69" fill="none">
+                                    <circle cx="34.5" cy="34.5" r="34.5" fill="#D9D9D9" />
+                                </svg>
+
+                            </div>
+                        </a>
+</div>
+                      
                     </div>
                 </div>
 

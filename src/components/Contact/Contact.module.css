@@ -5,6 +5,17 @@
   padding-bottom: 50px;
 }
 
+.contactTitle {
+  text-align: center;
+}
+.contactTitle p {
+  font-family: FavoritMonoRegular;
+}
+.dividerLine {
+  width: 100%;
+  padding: 2rem;
+}
+
 .contactContainer {
   padding-left: 10%;
   padding-right: 10%;
@@ -79,4 +90,35 @@
   width: 40px;
   align-self: flex-end; /* pushes the icon to the right */
   margin-top: auto; /* ensures it sits at the bottom */
+}
+
+.arrowBox{
+  display: inline-block;
+  flex-grow: 1;
+}
+.arrow {
+  position: relative;
+  width: 69px; /* Match the largest SVG */
+  height: 98px; /* Adjust based on actual size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: inline-end;
+}
+
+.arrow svg:first-child {
+  position: relative; /* Keeps the arrow in normal flow */
+  z-index: 2; /* Ensures it's above the circle */
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.arrow svg:last-child {
+  position: absolute;
+  top: 0px; /* Adjust as needed */
+  z-index: 1;
+  animation: blink 1s infinite;
 }

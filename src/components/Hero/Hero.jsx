@@ -30,80 +30,95 @@ export const Hero = () => {
 
     return (
         <section id="home">
-            <div className={styles.bentoGrid}>
-                <div className={styles.item}>
-                    <div className={styles.dotContain}>
-                        <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <circle cx="7" cy="7" r="7" fill="black" />
-                        </svg>
-                    </div>
-                    <p>Maddie Lebiedzinski</p>
-                    <p>
-                        <a className={styles.indexLinks} href="#projects">
-                            <span className={styles.navButton}>Projects</span>
-                        </a>
-                        <a className={styles.indexLinks} href="#about">
-                            <span className={styles.navButton}>About</span>
-                        </a>
-                        <a className={styles.indexLinks} href="#contact">
-                            <span className={styles.navButton}>Contact</span>
-                        </a>
-                    </p>
-                </div>
-
-                <div className={styles.item}>
-
-                    <p>Hi! I’m Maddie. <br />
-                        <br />
-                        ( Designer & Developer passionate about creating impactful digital experiences )
-                        <br /><br />
-                        Thanks for visiting my website!</p>
-                    <img src="../../../assets/hero/headshot.png" alt="line"></img>
-                </div>
-
-                <div className={styles.item}>
-                    <div className={styles.dotContain}>
-                        <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <circle cx="7" cy="7" r="7" fill="black" />
-                        </svg>
-                    </div>
-                    <p>
-                        <span className={styles.typing}>{text}</span>
-                        <span className={styles.blink}>|</span>
-                    </p>
-                </div>
-
-                <div className={styles.item}>
-                    <div className={styles.dotContain}>
-                        <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <circle cx="7" cy="7" r="7" fill="black" />
-                        </svg>
-                    </div>
-                    <p>🎓 I am a recent Northeastern University Graduate with a B.S. in Computer Science and Interaction Design.
-                    </p>
-                </div>
-
-                <div className={styles.item}>
-                    <div className={styles.dotContain}>
-                        <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                            <circle cx="7" cy="7" r="7" fill="black" />
-                        </svg>
+            <div className={styles.heroContainer}>
+                <div className={styles.bentoGrid}>
+                    <div className={styles.item}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                        <p>Maddie Lebiedzinski</p>
+                        <p>
+                            <a className={styles.indexLinks} href="#projects">
+                                <span className={styles.navButton}>Projects</span>
+                            </a>
+                            <a className={styles.indexLinks} href="#about">
+                                <span className={styles.navButton}>About</span>
+                            </a>
+                            <a className={styles.indexLinks} href="#contact">
+                                <span className={styles.navButton}>Contact</span>
+                            </a>
+                        </p>
                     </div>
 
-                    <p>
-                        I’m open to work
-                        <a
-                            href="#"
-                            onClick={(e) => {
-                                e.preventDefault();
-                                window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-                            }}
-                        >
-                            <span className={styles.star}>{star}</span>
-                        </a>
+                    <div className={styles.item}>
 
-                    </p>
+                        <p>Hi! I’m Maddie. <br />
+                            <br />
+                            ( Designer & Developer passionate about creating impactful digital experiences )
+                            <br /><br />
+                            Thanks for visiting my website!</p>
+                        <img src="../../../assets/hero/headshot.png" alt="line"></img>
+                    </div>
+
+                    <div className={styles.item}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                        <p>
+                            <span className={styles.typing}>{text}</span>
+                            <span className={styles.blink}>|</span>
+                        </p>
+                    </div>
+
+                    <div className={styles.item}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                        <p>🎓 I am a recent Northeastern University Graduate with a B.S. in Computer Science and Interaction Design.
+                        </p>
+                    </div>
+
+                    <div className={styles.item}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+
+                        <p>
+                            I’m open to work
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+                                }}
+                            >
+                                <span className={styles.star}>{star}</span>
+                            </a>
+
+                        </p>
+                    </div>
                 </div>
+
+                <a href="#projects">
+                    <div className={styles.arrow}>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="98" viewBox="0 0 30 98" fill="none">
+                            <path d="M13.5858 97.4142C14.3668 98.1953 15.6332 98.1953 16.4142 97.4142L29.1421 84.6863C29.9232 83.9052 29.9232 82.6389 29.1421 81.8579C28.3611 81.0768 27.0948 81.0768 26.3137 81.8579L15 93.1716L3.68629 81.8579C2.90524 81.0768 1.63891 81.0768 0.857861 81.8579C0.076812 82.6389 0.0768119 83.9052 0.857861 84.6863L13.5858 97.4142ZM13 -8.74227e-08L13 96L17 96L17 8.74227e-08L13 -8.74227e-08Z" fill="black" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
+                            <circle cx="34.5" cy="34.5" r="34.5" fill="#D9D9D9" />
+                        </svg>
+
+                    </div>
+                </a>
             </div>
         </section>
 

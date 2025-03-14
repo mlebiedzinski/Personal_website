@@ -22,7 +22,7 @@ export const Projects = () => {
 
             <div className={styles.projectsContainer}>
                 <div className={styles.projectsTitle}>
-                    <p>Check out my projects !</p>
+                    <p>Check out my Projects !</p>
                     <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
                 </div>
                 {data.largeProjects.map((project, index) => (

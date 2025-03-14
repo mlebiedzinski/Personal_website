@@ -9,7 +9,7 @@ export const About = () => {
             <div className={styles.aboutContainer}>
         
                 <div className={styles.aboutTitle}>
-                    <p>About me !</p>
+                    <p>About Me !</p>
                     <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
                 </div>
 
