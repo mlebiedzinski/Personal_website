@@ -46,12 +46,14 @@ export const Projects = () => {
                                     <div key={idx} className={styles.projectLinkButton}>
                                         <a href={link.url} target="_blank" rel="noopener noreferrer">
                                             {icons[link.type]}
+                                            <div>
+                                                {link.hover}
+                                            </div>
                                         </a>
+
                                     </div>
                                 ))}
-                                {/* <div>
-                                    {link.hover}
-                                </div> */}
+
                             </div>
 
                         </div>

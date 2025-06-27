@@ -82,7 +82,7 @@ export const Contact = () => {
                             <div className={styles.boxText}>
                                 <span>I’m running a marathon. <br />
                                     Help me raise money for cancer.</span></div>
-                            <a href="#">
+                            <a href="https://fundraise.cancerresearch.org/fundraiser/6202373" target="_blank" rel="noopener noreferrer">
                                 <img className={styles.linkIcon} src="../../../assets/projects/arrowIcon.png"></img>
                             </a>
                         </div>
