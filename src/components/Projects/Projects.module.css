@@ -102,22 +102,22 @@
 .projectTagline {
   padding-top:60px;
   color: black;
-  font-size: 22px;
-  font-family: FavoritBlack;
+  font-size: 16px;
+  font-family: FavoritMonoRegular;
 }
 
 .projectDescription {
   padding-top: 0px;
   color: black;
-  font-size: 20px;
-  font-family: FavoritRegular;
+  font-size: 16px;
+  font-family: FavoritMonoRegular;
 }
 
 .projectDescriptionSmall {
   padding-top: 30px;
   color: black;
-  font-size: 18px;
-  font-family: FavoritRegular;
+  font-size: 14px;
+  font-family: FavoritMonoRegular;
 }
 
 .projectLinks {
