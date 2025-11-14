@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
+  padding: clamp(1rem, 4vw, 2rem);
 }
 
 .projectsTitle {
@@ -13,22 +13,26 @@
 }
 .dividerLine {
   width: 100%;
-  padding: 2rem;
+  padding: clamp(1rem, 3vw, 2rem);
 }
 .projectsContainerSmall {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
+  flex-wrap: nowrap;
 }
 
 .projectCard {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding: clamp(15px, 3vw, 20px);
   background-color: none ;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   border: 1px solid #000;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .projectCard:hover{
@@ -57,19 +61,19 @@
   flex: 3;
   min-width: 60%;
   max-width: 500px;
-  padding-right: 50px;
+  padding-right: clamp(20px, 5vw, 50px);
 }
 
 .projectTitle {
   font-family: HeldaneDisplayRegular;
   color: black;
-  font-size: 48px;
+  font-size: clamp(28px, 5vw, 48px);
 }
 
 .projectTitleSmall {
   font-family: HeldaneDisplayRegular;
   color: black;
-  font-size: 32px;
+  font-size: clamp(20px, 4vw, 32px);
 }
 
 .projectSkills {
@@ -100,32 +104,33 @@
 }
 
 .projectTagline {
-  padding-top:60px;
+  padding-top: clamp(30px, 6vw, 60px);
   color: black;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   font-family: FavoritMonoRegular;
 }
 
 .projectDescription {
   padding-top: 0px;
   color: black;
-  font-size: 16px;
+  font-size: clamp(14px, 2vw, 16px);
   font-family: FavoritMonoRegular;
 }
 
 .projectDescriptionSmall {
-  padding-top: 30px;
+  padding-top: clamp(20px, 4vw, 30px);
   color: black;
-  font-size: 14px;
+  font-size: clamp(12px, 2vw, 14px);
   font-family: FavoritMonoRegular;
 }
 
 .projectLinks {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 9px;
   margin-top: auto;
   padding-top: 30px;
+  flex-wrap: wrap;
 }
 
 
@@ -141,15 +146,77 @@
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  min-width: 200px;
 }
 
 
 .projectImg {
   width: 100%;
+  max-width: 500px;
   object-fit: cover;
   height: auto;
 }
 
 .projectIcon {
-  height: 42px;
+  height: clamp(32px, 4vw, 42px);
+}
+
+/* Responsive Design for Projects */
+@media screen and (max-width: 1024px) {
+  .projectCard {
+    flex-direction: column;
+  }
+
+  .projectContent {
+    min-width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .projectImgContainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .projectImg {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .projectsContainerSmall {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .smallProjectCard {
+    width: 100%;
+  }
+
+  .projectCard {
+    padding: 15px;
+  }
+
+  .projectTagline {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projectCard {
+    padding: 12px;
+  }
+
+  .projectContent {
+    min-width: 100%;
+  }
+
+  .projectSoftwarePill {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+
+  .projectSkills {
+    font-size: 11px;
+  }
 }
