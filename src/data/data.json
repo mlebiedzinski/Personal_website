@@ -59,8 +59,8 @@
         "title": "Paul's",
         "skills": "Front-end Development - UX/UI Design - Branding",
         "software": ["Javascript", "CSS", "Figma"],
-        "tagline": "From Grandpa’s doodle to your morning brew – Paul’s Café.",
-        "description": "This website is a nostalgic digital experience inspired by Grandpa Paul’s daily visits to his local café. The site combines hand-drawn illustrations and simple design to capture the warmth and simplicity of morning rituals. It's a tribute to the little moments that make mornings special.",
+        "tagline": "From Grandpa's doodle to your morning brew – Paul's Café.",
+        "description": "This website is a nostalgic digital experience inspired by Grandpa Paul's daily visits to his local café. The site combines hand-drawn illustrations and simple design to capture the warmth and simplicity of morning rituals. It's a tribute to the little moments that make mornings special.",
         "image": "../../../assets/projects/pauls.png",
         "links": [
           {
@@ -69,6 +69,16 @@
             "hover": "Visit the Website!"
           }
         ]
+      },
+      {
+        "title": "Runna x Beli : Run & Refuel",
+        "skills": "Product Design - UX/UI Design - Software Development",
+        "software": ["Javascript", "CSS", "Figma"],
+        "tagline": "",
+        "description": "Coming soon!",
+        "image": "../../../assets/projects/runnaBeli.png",
+        "links": [],
+        "isCompact": true
       }
       
     

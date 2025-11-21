@@ -26,7 +26,7 @@ export const Projects = () => {
                     <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
                 </div>
                 {data.largeProjects.map((project, index) => (
-                    <div key={index} className={styles.projectCard}>
+                    <div key={index} className={`${styles.projectCard} ${project.isCompact ? styles.projectCardCompact : ''}`}>
                         <div className={styles.projectContent}>
                             <div className={styles.projectTitle}>{project.title}</div>
                             <div className={styles.projectSkills}>{project.skills}</div>
@@ -39,27 +39,31 @@ export const Projects = () => {
                                 ))}
                             </div>
 
-                            <div className={styles.projectTagline}>{project.tagline}</div>
+                            {project.tagline && <div className={styles.projectTagline}>{project.tagline}</div>}
                             <div className={styles.projectDescription}>{project.description}</div>
-                            <div className={styles.projectLinks}>
-                                {project.links.map((link, idx) => (
-                                    <div key={idx} className={styles.projectLinkButton}>
-                                        <a href={link.url} target="_blank" rel="noopener noreferrer">
-                                            {icons[link.type]}
-                                            {/* <div>
-                                                {link.hover}
-                                            </div> */}
-                                        </a>
+                            {project.links && project.links.length > 0 && (
+                                <div className={styles.projectLinks}>
+                                    {project.links.map((link, idx) => (
+                                        <div key={idx} className={styles.projectLinkButton}>
+                                            <a href={link.url} target="_blank" rel="noopener noreferrer">
+                                                {icons[link.type]}
+                                                {/* <div>
+                                                    {link.hover}
+                                                </div> */}
+                                            </a>
 
-                                    </div>
-                                ))}
+                                        </div>
+                                    ))}
 
+                                </div>
+                            )}
+
+                        </div>
+                        {project.image && (
+                            <div className={styles.projectImgContainer}>
+                                <img src={project.image} className={styles.projectImg} alt="sdimg" />
                             </div>
-
-                        </div>
-                        <div className={styles.projectImgContainer}>
-                            <img src={project.image} className={styles.projectImg} alt="sdimg" />
-                        </div>
+                        )}
 
                     </div>
                 ))}

@@ -35,6 +35,65 @@
   gap: 1rem;
 }
 
+.projectCardCompact {
+  min-height: auto;
+  max-height: 180px;
+  align-items: center;
+  padding: clamp(12px, 2.5vw, 15px);
+}
+
+.projectCardCompact .projectContent {
+  padding-right: clamp(15px, 3vw, 20px);
+  min-width: 60%;
+  max-width: 70%;
+}
+
+.projectCardCompact .projectTagline {
+  display: none;
+}
+
+.projectCardCompact .projectDescription {
+  padding-top: 0;
+  margin-top: 0.5rem;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.projectCardCompact .projectTitle {
+  font-size: clamp(24px, 4vw, 36px);
+  margin-bottom: 0.25rem;
+}
+
+.projectCardCompact .projectSoftwarePillContainer {
+  padding-top: 6px;
+}
+
+.projectCardCompact .projectImgContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 200px;
+}
+
+.projectCardCompact .projectImg {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  height: auto;
+}
+
+/* Hide image on small screens for compact cards */
+@media screen and (max-width: 768px) {
+  .projectCardCompact .projectImgContainer {
+    display: none;
+  }
+
+  .projectCardCompact .projectContent {
+    min-width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
 .projectCard:hover{
   background-color: var(--color-yellow);
 }
