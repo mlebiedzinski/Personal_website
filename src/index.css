@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&display=swap');
+@import "tailwindcss";
+@import "./vars.css";
+
+@theme {
+  --color-pink: #E9CDCD;
+  --color-yellow: #ECD082;
+  --color-tan: #EEEDD5;
+  --color-slate-green: #4E2A1A;
+  --color-blue: #1B25E0;
+  --color-red: #C1291E;
+  --color-green: #A0C560;
+  --color-gray: #E8E8E8;
+  --color-darker-gray: #D9D9D9;
+  
+  --font-family-abhaya: 'Abhaya Libre', serif;
+  --font-abhaya: var(--font-family-abhaya);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,4 +32,10 @@ html {
 body {
   overflow-x: hidden;
   width: 100%;
+}
+
+@layer base {
+  .font-abhaya {
+    font-family: 'Abhaya Libre', serif;
+  }
 }
