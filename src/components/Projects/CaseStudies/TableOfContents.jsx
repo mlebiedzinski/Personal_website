@@ -13,6 +13,7 @@ export const TableOfContents = ({ sections, heroRef }) => {
         setIsSticky(window.scrollY > heroBottom);
       }
 
+
       // Find the active section based on scroll position
       // Use the same offset as scrollToSection (100px) to match click navigation exactly
       const scrollOffset = 100; // Same offset used in scrollToSection

@@ -1,6 +1,7 @@
 import { CaseStudyLayout } from './CaseStudyLayout';
 import {
   HeroSection,
+  ToolsSection,
   OverviewSection,
   HighlightsSection,
   ChallengeSection,
@@ -10,12 +11,14 @@ import {
   VisualDesignSection,
   KeyScreensSection,
   ImplementationSection,
+  FinalDesignsSection,
   ReflectionsSection
 } from './Sections';
 
 export const ScreenDimeCaseStudy = () => {
   const sections = [
     { id: 'hero', title: 'Hero' },
+    { id: 'tools', title: 'Tools' },
     { id: 'overview', title: 'Overview' },
     { id: 'highlights', title: 'Highlights' },
     { id: 'challenge', title: 'The Challenge' },
@@ -25,6 +28,7 @@ export const ScreenDimeCaseStudy = () => {
     { id: 'visual-design', title: 'Visual Design' },
     { id: 'key-screens', title: 'Key Screens' },
     { id: 'implementation', title: 'Implementation' },
+    { id: 'final-designs', title: 'Final Design' },
     { id: 'reflections', title: 'Reflections' }
   ];
 
@@ -40,14 +44,16 @@ export const ScreenDimeCaseStudy = () => {
           'STATUS': 'Launched (TestFlight Beta)',
           'DELIVERABLES': 'User Research, Storyboards, Paper Prototyping, Usability Testing, High-Fidelity Prototype, iOS App Development, Heuristic Evaluation'
         }}
-        heroImage="/assets/projects/sdMockup.png"
+        heroImage="/assets/projects/ScreenDimeCaseStudy/sdMockup.png"
       />
+
+      <ToolsSection tools="SwiftUI, Xcode, Figma, Paper Prototyping Materials" />
 
       <OverviewSection
         content={'The project emerged from a simple but universal challenge: college students and young adults want to spend more time connecting with friends in person, but find themselves constantly pulled back to their phones.\n\nWhile many screen time management apps exist, they typically approach the problem through restriction and guilt—blocking apps, setting timers, or shaming users with statistics. ScreenDime takes a different approach: it transforms reducing screen time into a social, competitive experience. By creating friendly wagers with friends around screen time goals, the app makes the journey toward healthier phone habits something to look forward to rather than dread.\n\nThe core insight driving our design was that social accountability and friendly competition are far more motivating than solo willpower. We wanted to create an app that doesn\'t just help you use your phone less—it helps you connect more deeply with the people who matter most.'}
       />
 
-      <HighlightsSection images={[1, 2, 3]} />
+      <HighlightsSection images={["/assets/projects/ScreenDimeCaseStudy/sdHighlights.png"]} />
 
       <ChallengeSection
         problemFraming={'College students and young adults are acutely aware they spend too much time on their phones, often at the expense of in-person social connections and meaningful activities. Despite this awareness, breaking phone habits is incredibly difficult. The dopamine-driven design of social media and entertainment apps creates powerful behavioral loops that are hard to escape alone.\n\nExisting screen time management solutions largely focus on individual willpower: app blockers, timers, and analytics dashboards that show you just how much time you\'re "wasting." These tools can be helpful, but they position phone use as a personal failing rather than a shared challenge. They\'re also easy to ignore or disable when motivation wanes, which it inevitably does.\n\nThere\'s an opportunity to reframe screen time reduction as a social activity—something you do with friends rather than in isolation. By adding elements of friendly competition, shared goals, and accountability to trusted peers, we hypothesized that reducing phone use could become not just easier, but actually enjoyable.'}
@@ -142,6 +148,10 @@ export const ScreenDimeCaseStudy = () => {
 
       <ImplementationSection
         content={'Technical Architecture\n\nCode Structure: We used the SwiftUI environment to create a series of Views connected through a final Global class, with Models for any objects we need to be able to access and edit. Our Models include Users, Groups, and Bets, as well as helpers such as Screen Time (for formatting timestamps) and Tabs (for the swipe dashboard interface).\n\nDummy Data: In place of a dedicated backend server for keeping track of the social network of the app, we created a series of dummy users and groups in the Global class at instantiation, which allows us to demonstrate the capabilities of the app in an easy way.\n\nCustomization: App-wide color styling and profile picture uploads enhance usability and personalization.\n\nCohesion Throughout Views: Each View has a number of local variables and popup menus they can access, as well as general access to both updating and reading from the Global tab to keep track of the app\'s overall status and keeping the rest of the Views informed. We found this was an effective way to have things work together seamlessly.\n\nDevelopment Challenges & Solutions\n\nChallenge: Maintaining consistency across multiple Views with shared state\n\nSolution: Implemented a Global class that all Views could access for reading and updating app state\n\nChallenge: Preventing invalid bet configurations (dates, parameters)\n\nSolution: Added validation logic that disables invalid options in the UI rather than showing error messages after submission\n\nChallenge: Managing group membership and ensuring users always have at least one group\n\nSolution: Built constraints into the leave group functionality to maintain minimum group membership\n\nChallenge: Coordinating team development without version conflicts\n\nSolution: Established clear role divisions and improved version control practices'}
+      />
+
+      <FinalDesignsSection
+        videoPath="/assets/projects/ScreenDimeCaseStudy/Demo.mov"
       />
 
       <ReflectionsSection

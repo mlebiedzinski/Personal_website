@@ -6,8 +6,7 @@ import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
 import { ScreenDimeCaseStudy } from "./components/Projects/CaseStudies/ScreenDime"; 
 import { SINCaseStudy } from "./components/Projects/CaseStudies/SIN"; 
-import { StravaCaseStudy } from "./components/Projects/CaseStudies/StravaTT"; 
-import { PaulsSite } from "./components/Projects/CaseStudies/PaulsPage.jsx";
+import { StravaCaseStudy } from "./components/Projects/CaseStudies/StravaTT";
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
           <Route path="/screendimecasestudy" element={<ScreenDimeCaseStudy />} />
           <Route path="/sincasestudy" element={<SINCaseStudy />} />
           <Route path="/stravacasestudy" element={<StravaCaseStudy />} />
-          <Route path="/pauls" element={<PaulsSite />} />
 
         </Routes>
       </div>

@@ -59,7 +59,7 @@ export const Hero = () => {
                             ( Designer & Developer passionate about creating impactful digital experiences )
                             <br /><br />
                             Thanks for visiting my website!</p>
-                        <img src="../../../assets/hero/headshot.png" alt="line"></img>
+                        <img src="/assets/hero/heroImg2.JPG" alt="line"></img>
                     </div>
 
                     <div className={styles.item}>

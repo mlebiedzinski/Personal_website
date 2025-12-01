@@ -1,10 +1,13 @@
 import React, { useRef } from 'react';
 import { TableOfContents } from './TableOfContents';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 export const CaseStudyLayout = ({ children, sections }) => {
   const heroRef = useRef(null);
   const navigate = useNavigate();
+  const location = useLocation();
+  const isStravaPage = location.pathname.includes('stravacasestudy');
+  const isSINPage = location.pathname.includes('sincasestudy');
 
   return (
     <div className="min-h-screen bg-white" style={{ fontFamily: "'Abhaya Libre', serif" }}>
@@ -21,12 +24,14 @@ export const CaseStudyLayout = ({ children, sections }) => {
         </button>
       </div>
 
-      {/* Under Construction Message */}
-      <div className="px-6 pt-2 pb-1">
-        <p className="text-sm text-red pl-6" style={{ fontFamily: "'Abhaya Libre', serif" }}>
-          💬 This page is slightly under construction, please excuse the incomplete appearance. I promise it'll be pretty soon :)
-        </p>
-      </div>
+      {/* Under Construction Message - Only show on non-Strava and non-SIN pages */}
+      {!isStravaPage && !isSINPage && (
+        <div className="px-6 pt-2 pb-1">
+          <p className="text-sm text-red pl-6" style={{ fontFamily: "'Abhaya Libre', serif" }}>
+            💬 This page is slightly under construction, please excuse the incomplete appearance. I promise it'll be pretty soon :)
+          </p>
+        </div>
+      )}
 
       {/* Hero Section - Full Width */}
       <div className="w-full">
@@ -57,6 +62,7 @@ export const CaseStudyLayout = ({ children, sections }) => {
           </div>
         </div>
       </div>
+
     </div>
   );
 };

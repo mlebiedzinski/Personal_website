@@ -6,7 +6,7 @@
         "software": ["Figma"],
         "tagline": "The journey matters as much as the finish line!",
         "description": "This project proposes a new feature for Strava that enables users to plan, schedule, and track workouts together with friends and family. Focusing on collaboration rather than competition, the feature allows users to link workouts to their calendars, add photos, and track progress throughout their training cycles. By fostering a sense of community and accountability, this feature helps users stay motivated and achieve their fitness goals in a supportive, fun way.",
-        "image": "../../../assets/projects/sttMockup.png",
+        "image": "/assets/projects/StravaTTCaseStudy/sttMockup.png",
         "links": [
           {
             "type": "page",
@@ -21,7 +21,7 @@
         "software": ["Javascript", "CSS", "Figma"],
         "tagline": "Empowering Impact through Innovation!",
         "description": "Sustainable Innovation Network (SIN) is a student-led social entrepreneurship organization with a mission to bridge impact and business. This project involved designing and developing SIN's website!",
-        "image": "../../../assets/projects/sinMockup.png",
+        "image": "/assets/projects/SINCaseStudy/sinMockup.png",
         "links": [
           {
             "type": "github",
@@ -41,7 +41,7 @@
         "software": ["Swift"],
         "tagline": "Bet on your screen time!",
         "description": "This app helps users reduce phone usage and combat loneliness by encouraging real-world connections. Through challenges and bets, users compete to achieve the lowest screen time over a set period, with leaderboards and group comparisons fostering friendly competition. The app promotes healthier digital habits and inspires users to spend more time engaging with their surroundings, reducing isolation and enhancing social interaction.",
-        "image": "../../../assets/projects/sdMockup.png",
+        "image": "../../../assets/projects/ScreenDimeCaseStudy/sdMockup.png",
         "links": [
           {
             "type": "github",
@@ -52,21 +52,6 @@
             "type": "page",
             "url": "/screendimecasestudy",
             "hover": "Read the Case Study!"
-          }
-        ]
-      },
-      {
-        "title": "Paul's",
-        "skills": "Front-end Development - UX/UI Design - Branding",
-        "software": ["Javascript", "CSS", "Figma"],
-        "tagline": "From Grandpa's doodle to your morning brew – Paul's Café.",
-        "description": "This website is a nostalgic digital experience inspired by Grandpa Paul's daily visits to his local café. The site combines hand-drawn illustrations and simple design to capture the warmth and simplicity of morning rituals. It's a tribute to the little moments that make mornings special.",
-        "image": "../../../assets/projects/pauls.png",
-        "links": [
-          {
-            "type": "page",
-            "url": "/pauls",
-            "hover": "Visit the Website!"
           }
         ]
       },

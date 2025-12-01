@@ -1,6 +1,7 @@
 import { CaseStudyLayout } from './CaseStudyLayout';
 import {
   HeroSection,
+  ToolsSection,
   OverviewSection,
   HighlightsSection,
   ChallengeSection,
@@ -42,14 +43,22 @@ export const StravaCaseStudy = () => {
           'STATUS': 'Concept Project',
           'DELIVERABLES': 'User Research, Competitive Analysis, Concept Sketches, Visual Design, High-Fidelity Prototype, Design System, Marketing Concepts'
         }}
-        heroImage="/assets/projects/sttMockup.png"
+        heroImage="/assets/projects/StravaTTCaseStudy/sttMockup.png"
       />
+
+      <ToolsSection tools="[Include logos: Figma, Procreate/iPad, Notion, etc.]" />
 
       <OverviewSection
-        content={'In 2023 and 2024, my friends, family, and I spontaneously signed up for quite a few crazy long races together—four half marathons and two triathlons, to be exact. To prepare for these athletic endeavors, I usually threw together a training plan in a Notion database, made a shared Apple Photos album to dump run photos into, and hoped we all remembered to block out time each week for training.\n\nThis chaotic but heartfelt process revealed a gap in the fitness app market: while apps like Strava excel at tracking individual performance and fostering competition, they miss the collaborative accountability that makes training with friends actually enjoyable. TrainTogether is my answer to this problem—a Strava feature that transforms the journey to race day into a shared, supportive experience rather than a solitary grind.\n\nThe feature emphasizes not just staying on track, but enjoying the actual journey leading up to achieving your goal and recognizing the importance of having accountability partners throughout.'}
+        content={'In 2023 and 2024, my friends, family, and I spontaneously signed up for quite a few crazy long races together—three half marathons and two triathlons, to be exact. To prepare for these athletic endeavors, I usually threw together a training plan in a Notion database, made a shared Apple Photos album to dump run photos into, and hoped we all remembered to block out time each week for training.\n\nThis chaotic but heartfelt process revealed a gap in the fitness app market: while apps like Strava excel at tracking individual performance and fostering competition, they miss the collaborative accountability that makes training with friends actually enjoyable. TrainTogether is my answer to this problem—a Strava feature that transforms the journey to race day into a shared, supportive experience rather than a solitary grind.\n\nThe feature emphasizes not just staying on track, but enjoying the actual journey leading up to achieving your goal and recognizing the importance of having accountability partners throughout.'}
+        image="/assets/projects/StravaTTCaseStudy/sttOverview.png"
       />
 
-      <HighlightsSection images={[1, 2, 3]} />
+      <HighlightsSection images={[
+        "/assets/projects/StravaTTCaseStudy/sttHighlights1.png",
+        "/assets/projects/StravaTTCaseStudy/sttHighlights2.png",
+        "/assets/projects/StravaTTCaseStudy/sttHighlights3.png",
+        "/assets/projects/StravaTTCaseStudy/sttHighlights4.png"
+      ]} />
 
       <ChallengeSection
         problemFraming={'Many fitness enthusiasts struggle with consistency and motivation when pursuing long-term goals like marathons or triathlons. The journey to race day is long, often spanning months of training that requires discipline, time management, and sustained motivation. While the excitement of race day is a powerful motivator, maintaining momentum during the weeks and months leading up to it is where most people struggle.\n\nExisting fitness apps focus primarily on tracking metrics and fostering competition through leaderboards and performance comparisons. While these features work for some users, they miss a crucial element: the collaborative, supportive dynamic that comes from training with friends. Current solutions require users to cobble together multiple tools—shared calendars, photo albums, messaging apps, and tracking platforms—to create even a basic collaborative training experience.\n\nThere\'s a clear opportunity to design a more integrated, purpose-built solution that makes training together as seamless as training alone, while emphasizing accountability and shared celebration over competition.'}
@@ -98,7 +107,20 @@ export const StravaCaseStudy = () => {
       />
 
       <KeyScreensSection
+        description="A comprehensive set of interfaces that guide users from setup through daily training experiences, celebrations, and group coordination."
+        coreCapabilities={[
+          'Intuitive onboarding flow for creating race specific plans, groups and inviting training partners',
+          'Central dashboard with visual progress indicators showing each member\'s completion status and progress.',
+          'Intuitive workout scheduling with group members progress indicators.',
+          'Shared photo albums for capturing memorable training moments',
+          'Automated milestone detection and celebration prompts'
+        ]}
         screens={[
+          {
+            title: 'Setup and Onboarding',
+            description: 'Intuitive onboarding flow for creating race specific plans, groups and inviting training partners',
+            imagePlaceholder: null
+          },
           {
             title: 'Group Training Dashboard',
               description: 'The central hub where training groups can see everyone\'s progress, upcoming workouts, and recent activities at a glance.',
@@ -148,7 +170,7 @@ export const StravaCaseStudy = () => {
 
       <MarketingSection
         content={'How Will This Feature Be Discovered?\n\nI considered how this feature would be branded and promoted, and envisioned where it might be showcased in a marketing campaign.'}
-        image="/assets/projects/sttMarketing.png"
+        image="/assets/projects/StravaTTCaseStudy/sttMarketing.png"
       />
 
       <FinalDesignsSection

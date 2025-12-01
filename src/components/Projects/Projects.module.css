@@ -37,7 +37,7 @@
 
 .projectCardCompact {
   min-height: auto;
-  max-height: 180px;
+  max-height: 240px;
   align-items: center;
   padding: clamp(12px, 2.5vw, 15px);
 }
@@ -79,6 +79,7 @@
   max-width: 500px;
   object-fit: cover;
   height: auto;
+  border-radius: 10px;
 }
 
 /* Hide image on small screens for compact cards */
@@ -214,6 +215,7 @@
   max-width: 500px;
   object-fit: cover;
   height: auto;
+  border-radius: 10px;
 }
 
 .projectIcon {
