@@ -433,11 +433,25 @@ export const ResearchSection = ({ competitiveAnalysis, userResearch, howMightWe 
             return (
               <>
                 {/* Intro paragraphs */}
-                {introParagraphs.map((paragraph, index) => (
-                  <p key={index} className="font-abhaya text-slate-green mb-4 leading-relaxed" style={{ fontFamily: "'Abhaya Libre', serif" }}>
-                    {paragraph}
-                  </p>
-                ))}
+                {introParagraphs.map((paragraph, index) => {
+                  // Check if this paragraph contains the storyboard placeholder
+                  if (paragraph.includes('[Include storyboard images')) {
+                    return (
+                      <div key={index} className="my-6 flex justify-center" style={{ padding: '2rem' }}>
+                        <img 
+                          src="/assets/projects/ScreenDimeCaseStudy/sdStoryboard.png" 
+                          alt="Storyboard" 
+                          className="w-full max-w-2xl h-auto rounded-lg"
+                        />
+                      </div>
+                    );
+                  }
+                  return (
+                    <p key={index} className="font-abhaya text-slate-green mb-4 leading-relaxed" style={{ fontFamily: "'Abhaya Libre', serif" }}>
+                      {paragraph}
+                    </p>
+                  );
+                })}
                 
                 {/* SIN Leadership Insights with leaf bullets */}
                 {sinLeadershipInsights.length > 0 && (
@@ -707,6 +721,19 @@ export const DesignProcessSection = ({ conceptCards, iterations, focus }) => {
               );
             }
             
+            // Check if this paragraph contains the paper prototype placeholder
+            if (paragraph.includes('[Include images of paper prototype screens]')) {
+              return (
+                <div key={index} className="my-6 flex justify-center" style={{ padding: '2rem' }}>
+                  <img 
+                    src="/assets/projects/ScreenDimeCaseStudy/sdPaperPrototype1.png" 
+                    alt="Paper Prototype" 
+                    className="w-full max-w-2xl h-auto rounded-lg"
+                  />
+                </div>
+              );
+            }
+            
             return (
               <p key={index} className="font-abhaya text-slate-green mb-4 leading-relaxed" style={{ fontFamily: "'Abhaya Libre', serif" }}>
                 {paragraph}
@@ -720,11 +747,25 @@ export const DesignProcessSection = ({ conceptCards, iterations, focus }) => {
       {iterations && (
         <div className="mb-8">
           <h3 className="font-abhaya font-bold text-2xl mb-4 text-slate-green" style={{ fontFamily: "'Abhaya Libre', serif" }}>Iteration & Feedback</h3>
-          {iterations.split('\n\n').map((paragraph, index) => (
-            <p key={index} className="font-abhaya text-slate-green mb-4 leading-relaxed" style={{ fontFamily: "'Abhaya Libre', serif" }}>
-              {paragraph}
-            </p>
-          ))}
+          {iterations.split('\n\n').map((paragraph, index) => {
+            // Check if this paragraph contains the before/after iterations placeholder
+            if (paragraph.includes('[Include images showing before/after of key design iterations]')) {
+              return (
+                <div key={index} className="my-6 flex justify-center" style={{ padding: '2rem' }}>
+                  <img 
+                    src="/assets/projects/ScreenDimeCaseStudy/sdPaperPrototype2.png" 
+                    alt="Design Iterations" 
+                    className="w-full max-w-2xl h-auto rounded-lg"
+                  />
+                </div>
+              );
+            }
+            return (
+              <p key={index} className="font-abhaya text-slate-green mb-4 leading-relaxed" style={{ fontFamily: "'Abhaya Libre', serif" }}>
+                {paragraph}
+              </p>
+            );
+          })}
           {/* Check if this is SIN case study (contains SIN-specific text) */}
           {(iterations.includes('SIN leadership') || iterations.includes('brand direction')) ? (
             <div className="my-6">
@@ -735,7 +776,7 @@ export const DesignProcessSection = ({ conceptCards, iterations, focus }) => {
               />
             </div>
           ) : (iterations.includes('Round 1 - Test User') || iterations.includes('Paper Prototype Testing')) ? (
-            // ScreenDime case study - don't show iteration images
+            // ScreenDime case study - placeholder already handled above
             null
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-0" style={{ marginTop: '2rem', marginBottom: '2rem' }}>
@@ -1114,6 +1155,7 @@ export const KeyScreensSection = ({ screens = [], description }) => {
           />
         </div>
       )}
+      
     </Section>
   );
 };
