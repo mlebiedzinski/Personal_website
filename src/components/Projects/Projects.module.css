@@ -95,10 +95,10 @@
   }
 }
 
-.projectCard:hover{
+.projectCard:hover:not(:has(.projectLinkButton:hover)){
   background-color: var(--color-yellow);
 }
-.smallProjectCard:hover{
+.smallProjectCard:hover:not(:has(.projectLinkButton:hover)){
   background-color: var(--color-yellow);
 }
 
@@ -218,8 +218,110 @@
   border-radius: 10px;
 }
 
+.projectLinkButton {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(42px, 4vw, 52px);
+  height: clamp(42px, 4vw, 52px);
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  animation: subtleWiggle 3s ease-in-out infinite;
+  transition: transform 0.2s ease;
+  background: transparent;
+}
+
+.projectLinkButton::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border-radius: 50%;
+  border: 2px solid var(--color-blue);
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.projectLinkButton:hover {
+  animation: none;
+  transform: scale(1.05);
+  border: 2px solid transparent;
+}
+
+.projectLinkButton:hover::before {
+  opacity: 1;
+  animation: drawCircle 0.6s ease-out forwards;
+}
+
+@keyframes subtleWiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes drawCircle {
+  0% {
+    border-top-color: var(--color-blue);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(0deg);
+  }
+  25% {
+    border-top-color: var(--color-blue);
+    border-right-color: var(--color-blue);
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    transform: rotate(90deg);
+  }
+  50% {
+    border-top-color: var(--color-blue);
+    border-right-color: var(--color-blue);
+    border-bottom-color: var(--color-blue);
+    border-left-color: transparent;
+    transform: rotate(180deg);
+  }
+  75% {
+    border-top-color: var(--color-blue);
+    border-right-color: var(--color-blue);
+    border-bottom-color: var(--color-blue);
+    border-left-color: var(--color-blue);
+    transform: rotate(270deg);
+  }
+  100% {
+    border-top-color: var(--color-blue);
+    border-right-color: var(--color-blue);
+    border-bottom-color: var(--color-blue);
+    border-left-color: var(--color-blue);
+    transform: rotate(360deg);
+  }
+}
+
+.projectLinkButton a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+
 .projectIcon {
   height: clamp(32px, 4vw, 42px);
+  width: auto;
+  pointer-events: none;
 }
 
 /* Responsive Design for Projects */

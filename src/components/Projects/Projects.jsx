@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./Projects.module.css";
 import data from "../../data/data.json"
+import { LiveIndicator } from "./LiveIndicator";
 
 export const Projects = () => {
     const icons = {
@@ -21,6 +22,7 @@ export const Projects = () => {
         <section id="projects">
 
             <div className={styles.projectsContainer}>
+                <LiveIndicator />
                 <div className={styles.projectsTitle}>
                     <p>Check out my Projects !</p>
                     <img className={styles.dividerLine} src="../../../assets/contact/line.png" alt="line" />
