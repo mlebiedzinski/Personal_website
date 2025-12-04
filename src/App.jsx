@@ -4,6 +4,7 @@ import { Hero } from "./components/Hero/Hero";
 import { Projects } from "./components/Projects/Projects";
 import { About } from "./components/About/About";
 import { Contact } from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
 import { ScreenDimeCaseStudy } from "./components/Projects/CaseStudies/ScreenDime"; 
 import { SINCaseStudy } from "./components/Projects/CaseStudies/SIN"; 
 import { StravaCaseStudy } from "./components/Projects/CaseStudies/StravaTT";
@@ -14,7 +15,7 @@ function App() {
       <div className={styles.App}>
         {/* Define routes for your sections */}
         <Routes>
-          <Route path="/" element={<><Hero /><Projects /><About /><Contact /></>} />
+          <Route path="/" element={<><Hero /><Projects /><About /><Contact /><Footer /></>} />
         
           <Route path="/screendimecasestudy" element={<ScreenDimeCaseStudy />} />
           <Route path="/sincasestudy" element={<SINCaseStudy />} />

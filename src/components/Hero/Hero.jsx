@@ -32,79 +32,66 @@ export const Hero = () => {
         <section id="home">
             <div className={styles.heroContainer}>
                 <div className={styles.bentoGrid}>
-                    <div className={styles.item}>
-                        <div className={styles.dotContain}>
+                    {/* Name card - top full width with dots in both corners */}
+                    <div className={`${styles.item} ${styles.nameCard}`}>
+                        <div className={styles.nameDotLeft}>
                             <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
                                 <circle cx="7" cy="7" r="7" fill="black" />
                             </svg>
                         </div>
                         <p>Maddie Lebiedzinski</p>
-                        <p>
+                        <div className={styles.nameDotRight}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    {/* Large intro statement - left side */}
+                    <div className={styles.item}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                        <p className={styles.introText}>
+                            Hi I am a<br />
+                            <span className={styles.largeText}>Designer</span> <span className={styles.ampersand}>&</span><br />
+                            <span className={styles.largeText}>Developer</span> <span className={styles.passionate}>passionate</span><br />
+                            about creating impactful digital<br />
+                            experiences!
+                        </p>
+                    </div>
+
+                    {/* Image card - vertical middle (gray background) */}
+                    <div className={`${styles.item} ${styles.imageBox}`}>
+                        <img src="/assets/hero/heroImg2.JPG" alt="Maddie" />
+                    </div>
+
+                    {/* Navigation links - tall right box */}
+                    <div className={`${styles.item} ${styles.navBox}`}>
+                        <div className={styles.dotContain}>
+                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                                <circle cx="7" cy="7" r="7" fill="black" />
+                            </svg>
+                        </div>
+                        <div className={styles.navLinks}>
+                            <div className={styles.navSeparator}></div>
                             <a className={styles.indexLinks} href="#projects">
                                 <span className={styles.navButton}>Projects</span>
                             </a>
+                            <div className={styles.navSeparator}></div>
                             <a className={styles.indexLinks} href="#about">
                                 <span className={styles.navButton}>About</span>
                             </a>
+                            <div className={styles.navSeparator}></div>
                             <a className={styles.indexLinks} href="#contact">
                                 <span className={styles.navButton}>Contact</span>
                             </a>
-                        </p>
-                    </div>
-
-                    <div className={styles.item}>
-
-                        <p>Hi! I’m Maddie. <br />
-                            <br />
-                            ( Designer & Developer passionate about creating impactful digital experiences )
-                            <br /><br />
-                            Thanks for visiting my website!</p>
-                        <img src="/assets/hero/heroImg2.JPG" alt="line"></img>
-                    </div>
-
-                    <div className={styles.item}>
-                        <div className={styles.dotContain}>
-                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                <circle cx="7" cy="7" r="7" fill="black" />
-                            </svg>
+                            <div className={styles.navSeparator}></div>
                         </div>
-                        <p>
-                            <span className={styles.typing}>{text}</span>
-                            <span className={styles.blink}>|</span>
-                        </p>
                     </div>
 
-                    <div className={styles.item}>
-                        <div className={styles.dotContain}>
-                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                <circle cx="7" cy="7" r="7" fill="black" />
-                            </svg>
-                        </div>
-                        <p>🎓 I am a recent Northeastern University Graduate with a B.S. in Computer Science and Interaction Design.
-                        </p>
-                    </div>
-
-                    <div className={styles.item}>
-                        <div className={styles.dotContain}>
-                            <svg className={styles.dot} xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                                <circle cx="7" cy="7" r="7" fill="black" />
-                            </svg>
-                        </div>
-
-                        <p>
-                            I’m open to work
-                            <a
-                                href="#"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
-                                }}
-                            >
-                                <span className={styles.star}>{star}</span>
-                            </a>
-
-                        </p>
-                    </div>
                 </div>
 
                 <a href="#projects">
@@ -116,9 +103,9 @@ export const Hero = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69" fill="none">
                             <circle cx="34.5" cy="34.5" r="34.5" fill="#D9D9D9" />
                         </svg>
-
                     </div>
                 </a>
+
             </div>
         </section>
 
