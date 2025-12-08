@@ -32,20 +32,33 @@
 .me {
     flex: 1 1 300px; /* Allow the image to grow/shrink with a minimum width */
     max-width: 400px; /* Limit the image size */
-    height: auto;
-    object-fit: contain;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Make it square */
+    object-fit: cover; /* Cover the square area */
+    border-radius: 20px; /* Rounded corners */
+}
+
+.textContainer {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(15px, 3vw, 20px);
 }
 
 .aboutText {
-    flex: 1 1 300px; /* Allow the text to grow/shrink with a minimum width */
+    width: 100%;
     font-size: clamp(0.9rem, 1.8vw, 1.3rem); /* Dynamically scale font size */
-    font-family: FavoritMonoRegular;
+    font-family: FavoritMonoRegular, monospace;
     color: var(--color-slate-green);
     background-color: var(--color-tan);
     padding: 15px;
     border-radius: 10px;
     line-height: 1.5;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.aboutText p {
+    font-family: FavoritMonoRegular, monospace;
 }
 
 .aboutText span {
@@ -93,6 +106,8 @@
 
     .me {
         max-width: clamp(250px, 60vw, 300px); /* Reduce image size */
+        aspect-ratio: 1 / 1; /* Maintain square shape */
+        border-radius: 15px; /* Slightly smaller radius on smaller screens */
     }
 
     .aboutText {
@@ -122,6 +137,8 @@
 
     .me {
         max-width: 100%;
+        aspect-ratio: 1 / 1; /* Maintain square shape */
+        border-radius: 12px; /* Smaller radius on mobile */
     }
 
     .aboutText {
