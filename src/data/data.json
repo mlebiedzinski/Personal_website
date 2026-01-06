@@ -1,6 +1,15 @@
 {
     "largeProjects": [
       {
+        "title": "Smart Fitness & Training Load",
+        "skills": "Event-Driven System - Full-Stack Development - Stateful Data Modeling",
+        "software": ["Typescript", "Java Spring Boot", "Kafka", "SQL"],
+        "tagline": "Coming soon!",
+        "description": "Smart Fitness & Training Load Platform is an event‑driven system that tracks workouts and continuously recalculates athlete training load, fatigue, and readiness over time. The platform models how individual actions trigger downstream updates to derived system state, presenting clear, real‑time insights through a unified dashboard. Although built in the fitness domain, the project is designed to mirror large‑scale financial platforms where events drive portfolio state, risk evaluation, and operational decision‑making.",
+        "image": "/assets/projects/SmartFitness.png",
+        "links": []
+      },
+      {
         "title": "Strava Train Together",
         "skills": "Product Design - UX/UI Design - User Research",
         "software": ["Figma"],
